@@ -7,33 +7,31 @@ import { useLanguage } from '@/hooks/use-language'
 import { translations } from '@/lib/translations'
 import {
   SiPython,
-  SiCplusplus,
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiDocker,
+  SiKotlin,
+  SiSpring,
+  SiAndroid,
   SiGit,
-  SiPostgresql,
-  SiMongodb,
-  SiTailwindcss,
-  
 } from 'react-icons/si'
+import JavaIcon from './icons/java-icon'
+import CSharpIcon from './icons/csharp-icon'
+import DotNetIcon from './icons/dotnet-icon'
+import OpenCVIcon from './icons/opencv-icon'
+import JetpackComposeIcon from './icons/jetpack-compose-icon'
 
 const technologies = [
+  // Programozási nyelvek
+  { name: 'C#', icon: CSharpIcon, color: 'from-blue-400 to-blue-600' },
+  { name: 'Java', icon: JavaIcon, color: 'from-orange-400 to-orange-600' },
   { name: 'Python', icon: SiPython, color: 'from-yellow-400 to-yellow-600' },
-  { name: 'C++', icon: SiCplusplus, color: 'from-blue-400 to-blue-600' },
-  { name: 'JavaScript', icon: SiJavascript, color: 'from-yellow-400 to-yellow-600' },
-  { name: 'TypeScript', icon: SiTypescript, color: 'from-blue-400 to-blue-600' },
-  { name: 'React', icon: SiReact, color: 'from-cyan-400 to-cyan-600' },
-  { name: 'Next.js', icon: SiNextdotjs, color: 'from-gray-400 to-gray-600' },
-  { name: 'Node.js', icon: SiNodedotjs, color: 'from-green-400 to-green-600' },
-  { name: 'Docker', icon: SiDocker, color: 'from-blue-400 to-blue-600' },
-  { name: 'Git', icon: SiGit, color: 'from-orange-400 to-orange-600' },
-  { name: 'PostgreSQL', icon: SiPostgresql, color: 'from-blue-400 to-blue-600' },
-  { name: 'MongoDB', icon: SiMongodb, color: 'from-green-400 to-green-600' },
-  { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'from-cyan-400 to-cyan-600' },
+  { name: 'Kotlin', icon: SiKotlin, color: 'from-purple-400 to-purple-600' },
+  // Frameworkök
+  { name: 'Spring Boot', icon: SiSpring, color: 'from-green-400 to-green-600' },
+  { name: '.NET Core', icon: DotNetIcon, color: 'from-blue-500 to-purple-600' },
+  // Egyéb
+  { name: 'Android', icon: SiAndroid, color: 'from-green-500 to-green-700' },
+  { name: 'OpenCV', icon: OpenCVIcon, color: 'from-cyan-400 to-blue-600' },
+  { name: 'Jetpack Compose', icon: JetpackComposeIcon, color: 'from-purple-500 to-cyan-500' },
+  { name: 'Git', icon: SiGit, color: 'from-orange-400 to-red-600' },
 ]
 
 export default function TechStack() {
@@ -62,9 +60,11 @@ export default function TechStack() {
           </h2>
           <p className="text-lg text-foreground/70">{t.tech.subtitle}</p>
         </motion.div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {technologies.map((tech, index) => {
             const Icon = tech.icon
+            const isCustomIcon = tech.name === 'C#' || tech.name === 'Java' || tech.name === '.NET Core' || tech.name === 'OpenCV' || tech.name === 'Jetpack Compose'
+            
             return (
               <motion.div
                 key={tech.name}
@@ -76,10 +76,14 @@ export default function TechStack() {
               >
                 <div className="relative p-6 rounded-xl bg-background border border-border hover:border-cyan-500/50 transition-all duration-300 cursor-pointer">
                   <div className="flex flex-col items-center justify-center space-y-3">
-                    <div className={`p-3 rounded-lg bg-gradient-to-br ${tech.color} opacity-80 group-hover:opacity-100 transition-opacity`}>
-                      <Icon className="h-8 w-8 text-white" />
+                    <div className={`p-3 rounded-lg bg-gradient-to-br ${tech.color} opacity-80 group-hover:opacity-100 transition-opacity flex items-center justify-center`}>
+                      {isCustomIcon ? (
+                        <Icon className="text-white" size={32} />
+                      ) : (
+                        <Icon className="h-8 w-8 text-white" />
+                      )}
                     </div>
-                    <span className="text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors">
+                    <span className="text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors text-center">
                       {tech.name}
                     </span>
                   </div>

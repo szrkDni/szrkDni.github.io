@@ -22,6 +22,7 @@ export default function Navbar() {
   const navItems = [
     { id: 'home', label: t.nav.home, href: '#home' },
     { id: 'about', label: t.nav.about, href: '#about' },
+    { id: 'tech', label: t.nav.tech, href: '#tech' },
     { id: 'projects', label: t.nav.projects, href: '#projects' },
     { id: 'contact', label: t.nav.contact, href: '#contact' },
   ]
