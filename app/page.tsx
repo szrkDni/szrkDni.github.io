@@ -1,7 +1,6 @@
 import Navbar from '@/components/navbar'
 import Hero from '@/components/hero'
-import About from '@/components/about'
-import TechStack from '@/components/tech-stack'
+import AboutTech from '@/components/about-tech'
 import Projects from '@/components/projects'
 import Contact from '@/components/contact'
 import Footer from '@/components/footer'
@@ -11,8 +10,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <About />
-      <TechStack />
+      <AboutTech />
       <Projects />
       <Contact />
       <Footer />

@@ -6,6 +6,7 @@ import { Moon, Sun, Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '@/hooks/use-language'
 import { translations } from '@/lib/translations'
+import Logo from './logo'
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false)
@@ -21,7 +22,6 @@ export default function Navbar() {
   const navItems = [
     { id: 'home', label: t.nav.home, href: '#home' },
     { id: 'about', label: t.nav.about, href: '#about' },
-    { id: 'tech', label: t.nav.tech, href: '#tech' },
     { id: 'projects', label: t.nav.projects, href: '#projects' },
     { id: 'contact', label: t.nav.contact, href: '#contact' },
   ]
@@ -39,9 +39,7 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent">
-              Portfolio
-            </div>
+            <Logo />
           </div>
         </div>
       </nav>
@@ -60,9 +58,9 @@ export default function Navbar() {
           <div className="flex items-center">
             <button
               onClick={() => scrollToSection('#home')}
-              className="text-2xl font-bold bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent"
+              className="cursor-pointer"
             >
-              Portfolio
+              <Logo />
             </button>
           </div>
 
