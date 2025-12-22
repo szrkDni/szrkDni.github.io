@@ -19,11 +19,11 @@ export const translations = {
     },
     about: {
       title: 'Rólam',
-      description: 'Szoftverfejlesztéssel és számítástechnikával foglalkozó egyetemi hallgató vagyok, aki szeret komplex problémákat megoldani és modern technológiákkal dolgozni. Folyamatosan tanulok és fejlődök, hogy a legjobb megoldásokat nyújthassam.',
+      description: 'Aktívan dolgozom szoftverfejlesztői karrierem beindításán, ahol a technológiai kíváncsiságomat mérnöki precizitással ötvözöm. Egyetemi tanulmányaim alatt elköteleződtem a komplex problémamegoldás mellett, és célom, hogy a legújabb stackek ismeretében olyan csapat tagja legyek, ahol a folyamatos fejlődés és a minőségi kód alapkövetelmény.',
     },
     tech: {
       title: 'Technológiai Stack',
-      subtitle: 'Az alábbi technológiákkal dolgozom',
+      subtitle: 'Az alábbi technológiákkal dolgoztam már',
     },
     projects: {
       title: 'Projektek',
@@ -33,7 +33,7 @@ export const translations = {
     },
     contact: {
       title: 'Kapcsolat',
-      subtitle: 'Írj nekem, ha szeretnél együtt dolgozni vagy csak beszélgetni szeretnél',
+      subtitle: 'Keress bizalommal!',
       name: 'Név',
       email: 'Email',
       message: 'Üzenet',
@@ -71,7 +71,7 @@ export const translations = {
     },
     about: {
       title: 'About Me',
-      description: 'I am a university student passionate about software development and computer science, who enjoys solving complex problems and working with modern technologies. I continuously learn and grow to provide the best solutions.',
+      description: 'Currently launching my professional software engineering career, I combine a passion for technology with a disciplined engineering mindset. My academic background has instilled in me a deep commitment to complex problem-solving. I am now seeking to join an innovative team where mastering the latest tech stacks and writing clean, quality code are the standard.',
     },
     tech: {
       title: 'Tech Stack',
@@ -85,7 +85,7 @@ export const translations = {
     },
     contact: {
       title: 'Contact',
-      subtitle: 'Reach out if you want to collaborate or just want to chat',
+      subtitle: 'Feel free to reach out!',
       name: 'Name',
       email: 'Email',
       message: 'Message',
