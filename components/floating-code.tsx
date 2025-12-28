@@ -12,14 +12,15 @@ interface CodeSnippet {
 }
 
 const codeSnippets: Omit<CodeSnippet, 'x' | 'y' | 'delay'>[] = [
-  { code: 'const dev = { passion: "coding" }', language: 'javascript' },
-  { code: 'def solve_problem(): return solution', language: 'python' },
-  { code: 'function create() { return magic; }', language: 'javascript' },
-  { code: 'class Developer { code() {} }', language: 'typescript' },
-  { code: 'if (bug) { debug(); }', language: 'javascript' },
-  { code: 'while (learning) { improve(); }', language: 'javascript' },
-  { code: 'async function build() { await deploy(); }', language: 'javascript' },
-  { code: 'const stack = ["React", "Next.js"]', language: 'javascript' },
+  { code: 'const dev = { passion: "coding" }', language: 'JavaScript' },
+  { code: 'def solve_problem(): return solution', language: 'Python' },
+  { code: 'public Vizard create() { return magic; }', language: 'Java' },
+  { code: 'interface Developer { void code(); }', language: 'C#' },
+  { code: 'if (bug) { debug() }', language: 'Kotlin' },
+  { code: 'while (learning) { improve(); }', language: 'JavaScript' },
+  { code: 'async Task build() { return await deploy(); }', language: 'C#' },
+  { code: 'stack = ["Gemini", "ChatGPT"]', language: 'Python' },
+  { code: 'helloword("print")', language: 'Kotlin' }
 ]
 
 export default function FloatingCode() {
@@ -78,6 +79,8 @@ export default function FloatingCode() {
     </div>
   )
 }
+
+
 
 
 
