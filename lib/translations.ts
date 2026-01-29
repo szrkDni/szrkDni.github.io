@@ -12,14 +12,14 @@ export const translations = {
     hero: {
       greeting: 'Üdvözöllek,',
       name: 'Szarka Dániel',
-      title: 'Mérnökinformatikus Hallgató',
+      title: 'Mérnökinformatikus',
       subtitle: 'Mérnöki szemlélettel ötvözöm a szoftveres intelligenciát a fizikai valósággal.',
-      cta: 'Tekintsd meg a munkáimat',
+      cta: 'Projektjeim',
       downloadResume: 'Önéletrajz letöltése',
     },
     about: {
       title: 'Rólam',
-      description: 'Aktívan dolgozom szoftverfejlesztői karrierem beindításán, ahol a technológiai kíváncsiságomat mérnöki precizitással ötvözöm. Egyetemi tanulmányaim alatt elköteleződtem a komplex problémamegoldás mellett, és célom, hogy a legújabb stackek ismeretében olyan csapat tagja legyek, ahol a folyamatos fejlődés és a minőségi kód alapkövetelmény.',
+      description: 'Aktívan dolgozom szoftverfejlesztői karrierem beindításán, ahol a technológiai kíváncsiságomat mérnöki precizitással ötvözöm. Egyetemi tanulmányaim alatt elköteleződtem a komplex problémamegoldás mellett, és célom, hogy a legújabb technológiák ismeretében olyan csapat tagja legyek, ahol a folyamatos fejlődhetek és .',
     },
     tech: {
       title: 'Technológiai Stack',
@@ -64,9 +64,9 @@ export const translations = {
     hero: {
       greeting: 'Hello,',
       name: 'Szarka Dániel',
-      title: 'Computer Engineering Student',
+      title: 'Computer Engineer',
       subtitle: 'I combine software intelligence with physical reality through an engineering perspective.',
-      cta: 'View my work',
+      cta: 'My projects',
       downloadResume: 'Download Resume',
     },
     about: {
@@ -106,6 +106,11 @@ export const translations = {
     },
   },
 } as const
+
+
+
+
+
 
 
 

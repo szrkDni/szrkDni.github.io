@@ -11,27 +11,27 @@ const projects = [
   {
     id: 1,
     title: 'Web Application',
-    description: 'Modern webalkalmazás React és Node.js technológiákkal, teljes stack megoldás RESTful API-val és valós idejű funkcionalitással.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+    technologies: ['NaN', 'Null'],
     github: 'https://github.com',
     demo: 'https://example.com',
   },
   {
     id: 2,
     title: 'Mobile App',
-    description: 'Keresztplatformos mobilalkalmazás React Native-tel, amely intuitív felhasználói élményt nyújt és teljesítményközpontú megoldást kínál.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop',
-    technologies: ['React Native', 'TypeScript', 'Firebase'],
+    technologies: ['NaN', 'Null'],
     github: 'https://github.com',
     demo: 'https://example.com',
   },
   {
     id: 3,
-    title: 'Cloud Infrastructure',
-    description: 'Skálázható cloud infrastruktúra Docker és Kubernetes-szel, automatizált CI/CD pipeline-mal és monitoring rendszerrel.',
+    title: 'Computer Vision',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop',
-    technologies: ['Docker', 'Kubernetes', 'AWS', 'Terraform'],
+    technologies: ['NaN', 'Null'],
     github: 'https://github.com',
     demo: 'https://example.com',
   },
@@ -123,6 +123,11 @@ export default function Projects() {
     </section>
   )
 }
+
+
+
+
+
 
 
 
